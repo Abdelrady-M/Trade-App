@@ -1,12 +1,16 @@
 "use client"
 
 import {
+  BarChart,
   Bell,
   Bookmark,
+  DollarSign,
   Home,
+  LayoutDashboard,
   List,
   Mail,
   MoreHorizontal,
+  Newspaper,
   User,
   Users,
 } from "lucide-react"
@@ -21,22 +25,22 @@ import { SidebarMobile } from "./sidebar-mobile"
 const sidebarItems: SidebarItems = {
   links: [
     { label: "Home", href: "/", icon: Home },
-    { label: "Notifications", href: "/item/notifications", icon: Bell },
-    { label: "Messages", href: "/item/messages", icon: Mail },
+    { label: "Charts", href: "/item/notifications", icon: BarChart },
+    { label: "Markets", href: "/item/messages", icon: DollarSign },
     {
       href: "/item/lists",
-      icon: List,
-      label: "Lists",
+      icon: Newspaper,
+      label: "News",
     },
     {
       href: "/item/bookmarks",
       icon: Bookmark,
-      label: "Bookmarks",
+      label: "Swap",
     },
     {
       href: "/item/communities",
-      icon: Users,
-      label: "Communities",
+      icon: LayoutDashboard,
+      label: "Dashboard",
     },
     {
       href: "/item/profile",
@@ -49,11 +53,8 @@ const sidebarItems: SidebarItems = {
       <SidebarButton icon={MoreHorizontal} className="w-full">
         More
       </SidebarButton>
-      <SidebarButton
-        className="w-full justify-center text-white"
-        variant="default"
-      >
-        Tweet
+      <SidebarButton className="w-full justify-center " variant="default">
+        Account
       </SidebarButton>
     </div>
   ),
