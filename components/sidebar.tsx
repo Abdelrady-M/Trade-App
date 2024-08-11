@@ -38,7 +38,7 @@ const sidebarItems: SidebarItems = {
       label: "Swap",
     },
     {
-      href: "/item/communities",
+      href: "/dashboard",
       icon: LayoutDashboard,
       label: "Dashboard",
     },

@@ -22,7 +22,9 @@ export function SidebarDesktop(props: SidebarDesktopProps) {
   return (
     <aside className="fixed left-0 top-0 z-40 h-screen w-[270px] max-w-xs border-r">
       <div className="h-full px-3 py-4">
-        <h3 className="mx-3 text-lg font-semibold text-foreground">Twitter</h3>
+        <h3 className="mx-3 text-lg font-semibold text-foreground">
+          Trade App
+        </h3>
         <div className="mt-5">
           <div className="flex w-full flex-col gap-1">
             {props.sidebarItems.links.map((link, index) => (

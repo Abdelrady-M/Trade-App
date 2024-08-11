@@ -67,10 +67,10 @@ export function SidebarMobile(props: SidebarMobileProps) {
                   <div className="flex w-full items-center justify-between">
                     <div className="flex gap-2">
                       <Avatar className="size-5">
-                        <AvatarImage src="https://github.com/max-programming.png" />
-                        <AvatarFallback>Max Programming</AvatarFallback>
+                        <AvatarImage src="https://github.com/shadcn.png" />
+                        <AvatarFallback>Admin</AvatarFallback>
                       </Avatar>
-                      <span>Max Programming</span>
+                      <span>Admin</span>
                     </div>
                     <MoreHorizontal size={20} />
                   </div>
