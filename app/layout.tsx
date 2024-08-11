@@ -5,6 +5,7 @@ import Head from "next/head"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
+import Footer from "@/components/Footer"
 import { Sidebar } from "@/components/sidebar"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <main className="mx-5 mt-16 sm:ml-[300px] sm:mt-3">
               <SiteHeader />
               {children}
+              <Footer />
             </main>
           </div>
         </ThemeProvider>
