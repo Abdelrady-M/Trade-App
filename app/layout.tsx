@@ -34,8 +34,6 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* <Head>
-      </Head> */}
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -43,12 +41,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="relative flex min-h-screen flex-col">
-            {/* <SiteHeader /> */}
+          <div className="relative min-h-screen sm:flex lg:flex-col">
             <Sidebar />
-            <main className="mx-5 mt-16 sm:ml-[300px] sm:mt-3">{children}</main>
+            <main className="mx-5 mt-16 sm:ml-[300px] sm:mt-3">
+              <SiteHeader />
+              {children}
+            </main>
           </div>
-          {/* <TailwindIndicator /> */}
         </ThemeProvider>
       </body>
     </html>
